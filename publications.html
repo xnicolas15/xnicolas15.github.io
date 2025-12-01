@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Publications Scientifiques</title>
+  <style>
+    :root {
+      --bg-dark: #0c0c0c;
+      --text-light: #f2f2f2;
+      --accent-green: #00ff7f;
+      --card-dark: #1a1a1a;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 40px;
+    }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .pub-list {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+    .pub-item {
+      background: var(--card-dark);
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid #222;
+    }
+    .pub-item h3 {
+      margin-top: 0;
+      color: var(--accent-green);
+    }
+    .pub-item p {
+      opacity: 0.85;
+    }
+    /* Commentaire pour toi :
+       Pour ajouter une publication, copie ceci :
+
+       <div class="pub-item">
+         <h3>Titre de la publication</h3>
+         <p>Auteurs, année, journal/conférence.</p>
+       </div>
+    */
+  </style>
+</head>
+<body>
+  <h1>Publications Scientifiques</h1>
+  <div class="pub-list">
+
+    <!-- Exemple -->
+    <div class="pub-item">
+      <h3>Exemple de Publication</h3>
+      <p>Auteur 1, Auteur 2 (2025). Journal de démonstration.</p>
+    </div>
+
+    <!-- Ajoute tes futures publications ici -->
+
+  </div>
+</body>
+</html>
