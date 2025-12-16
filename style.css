@@ -137,6 +137,8 @@ h2.section-title {
   width: 20px;
   height: 20px;
   fill: currentColor;
+  position: relative;
+  top: -2px;
 }
 
 /* ---------- Footer ---------- */
