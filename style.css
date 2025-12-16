@@ -1,0 +1,120 @@
+/* =====================================================
+   STYLE GLOBAL – À UTILISER SUR TOUTES LES PAGES
+   (index.html, publications.html, etc.)
+   ===================================================== */
+
+/* ---------- Variables globales ---------- */
+:root {
+  --bg-dark: #0c0c0c;
+  --text-light: #f2f2f2;
+  --accent-green: #00ff7f;
+  --card-dark: #1a1a1a;
+}
+
+/* ---------- Reset & base ---------- */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+/* ---------- Header commun ---------- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, 0.6);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+header a:hover {
+  color: var(--accent-green);
+}
+
+/* ---------- Titres ---------- */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0;
+}
+
+h2.section-title {
+  font-size: 2.5rem;
+  margin: 80px 0 40px;
+  text-align: center;
+}
+
+/* ---------- Projets / cartes ---------- */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 0 40px 80px;
+}
+
+.project-card,
+.pub-item {
+  background: var(--card-dark);
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #222;
+}
+
+.project-card h3,
+.pub-item h3 {
+  color: var(--accent-green);
+  margin-top: 0;
+}
+
+/* ---------- Publications ---------- */
+.pub-list {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ---------- Bouton téléchargement ---------- */
+.download-btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  background: var(--accent-green);
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,255,127,0.4);
+}
+
+.download-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  text-align: center;
+  padding: 40px;
+  opacity: 0.6;
+}
