@@ -42,6 +42,24 @@ header a:hover {
   color: var(--accent-green);
 }
 
+/* ---------- Header navigation ---------- */
+header nav {
+  display: flex;
+  gap: 30px; /* espace entre chaque lien */
+}
+
+header nav a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+header nav a:hover {
+  color: var(--accent-green);
+}
+
+
 /* ---------- Titres ---------- */
 h1 {
   font-size: 3rem;
